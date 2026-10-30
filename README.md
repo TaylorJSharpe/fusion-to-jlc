@@ -14,8 +14,8 @@ Converts Fusion 360 Electronics text exports into the files JLCPCB's SMT assembl
 
 ## Quick start
 
-1. Put your Fusion exports (the BOM `.txt` and the PnP `.txt` file(s)) in the `Fusion In` folder. *Use the `Vendor Part Number` column to add JLCPCB parts for easy import!*
-2. Double-click `Convert.bat` (or run `python fusion_to_jlc.py` with no arguments).
+1. Put your Fusion exports (the BOM `.txt` and the PnP `.txt` file(s)) in the `Fusion In` folder. *Use the `Vendor Part Number` column to add JLCPCB parts for easy import.* Export the BOM from inside the BOM table in Fusion, since the `Assembly` export will not contain `Vendor Part Number` as a column. The PnP file can be taken from the `Assembly`e
+2xport.. Double-click `Convert.bat` (or run `python fusion_to_jlc.py` with no arguments).
 3. Pick up the results from the `JLC Out` folder: `JLC_BOM_<name>.xlsx` and `JLC_CPL_<name>.xlsx`.
 
 Details:
